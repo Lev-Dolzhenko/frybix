@@ -1,0 +1,11 @@
+@keyframes showDashboard {
+    from {
+        transform: translateX(15%);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateX(-3%);
+        opacity: 1;
+    }
+}

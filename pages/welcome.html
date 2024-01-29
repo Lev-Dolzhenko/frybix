@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js" defer></script>
+    <script src="/scripts/script.js" defer></script>
+    <link rel="stylesheet" href="/css/main.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container continer_header">
+        <div class="header__row">
+          <div class="header__row_img">
+            <a href="#!"
+              ><img src="/content/header/logotype.svg" alt="Frybix"
+            /></a>
+          </div>
+          <nav class="header__row_nav">
+            <ul class="heder__row_list">
+              <li class="header__row_item">
+                <a class="header__row_link" href="#!">home</a>
+              </li>
+              <li class="header__row_item">
+                <a class="header__row_link" href="#!">about us</a>
+              </li>
+              <li class="header__row_item">
+                <a class="header__row_link" href="#!">pricing</a>
+              </li>
+              <li class="header__row_item">
+                <a class="header__row_link" href="#!">features</a>
+              </li>
+              <li class="header__row_item">
+                <button class="header__row_button">sign in</button>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <main class="main">
+      <section class="welcome">
+        <div class="container">
+          <div class="welcome__wrapper">
+            <div class="welcome__wrapper_text">
+              <div class="wrapper_text_title">
+                <h1 class="title1 title1_welcome">
+                  Simplified <span>productivity</span> app for all.
+                </h1>
+              </div>
+              <div class="wrapper_text_subtitleP">
+                <p class="subtitleP subtitleP_welcome">
+                  Frybix is hub for managing productivity tasks professionaly
+                  and efficiently
+                </p>
+              </div>
+              <form class="welcome__wrapper_text_form">
+                <input
+                  type="text"
+                  name="email"
+                  id="emil"
+                  placeholder="Your Email"
+                />
+                <button>
+                  <img src="./../content/main/welcome/arrow.svg" alt="arrow" />
+                </button>
+              </form>
+            </div>
+            <div class="welcome__wrapper_customers">
+              <p class="wrapper_customers_subtitle">
+                Already using frybix? <span>Sign In</span>
+              </p>
+              <div class="wrapper_customers_row">
+                <div class="customers__row_persons">
+                  <img
+                    id="personeOne"
+                    src="/content/main/welcome/personeOne.png"
+                    alt="personeOne"
+                  />
+                  <img
+                    id="personeTwo"
+                    src="/content/main/welcome/personTwo.png"
+                    alt="personeTwo"
+                  />
+                  <img
+                    id="personeThree"
+                    src="/content/main/welcome/personThree.png"
+                    alt="personeThree"
+                  />
+                </div>
+                <div class="customers__row_counter">
+                  <strong id="counterOfCustomizers"></strong>
+                  <span>Happy Customers</span>
+                </div>
+                <div class="customers__row_rating">
+                  <strong>4.8/5</strong>
+                  <div class="rating_stars">
+                    <img src="/content/main/welcome/star.png" alt="star" />
+                    <img src="/content/main/welcome/star.png" alt="star" />
+                    <img src="/content/main/welcome/star.png" alt="star" />
+                    <img src="/content/main/welcome/star.png" alt="star" />
+                    <img
+                      src="/content/main/welcome/starOff.png"
+                      alt="star off"
+                    />
+                    <span>Rating</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="welcome__images">
+              <img
+                id="welocmeDashboard"
+                src="/content/main/welcome/dashboard.png"
+                alt="dashboard"
+              />
+              <img
+                data-aos="flip-left"
+                data-aos-delay="350"
+                id="welcomeCustomers"
+                src="/content/main/welcome/customers.png"
+                alt="customers"
+              />
+              <img
+                data-aos="flip-left"
+                data-aos-delay="500"
+                id="welcomeStatistic"
+                src="/content/main/welcome/statisctic.png"
+                alt="customers"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="sponsors">
+        <div class="container">
+          <div class="sponsors__wrapper">
+            <div class="wrapper_stat">
+              <div class="wrapper_stat_text">
+                <p class="">trusted by 20,000+ clients</p>
+              </div>
+              <div class="wrapper_stat_stars">
+                <img src="/content/main/sponsors/star.png" alt="star" />
+                <img src="/content/main/sponsors/star.png" alt="star" />
+                <img src="/content/main/sponsors/star.png" alt="star" />
+                <img src="/content/main/sponsors/star.png" alt="star" />
+                <img src="/content/main/sponsors/starOff.png" alt="star off" />
+              </div>
+            </div>
+            <div class="sponsolrs__wrapper_title">
+              <h2 class="title2 title2_sponsors">
+                they <span>trust</span> us.
+              </h2>
+            </div>
+          </div>
+        </div>
+        <div class="scroller" data-speed="fast">
+          <ul class="tag-list scroller__inner">
+            <li class="scroller_item">
+              <img src="/content/main/sponsors/draftbit.png" alt="" />
+            </li>
+            <li class="scroller_item">
+              <img src="/content/main/sponsors/feedly.png" alt="" />
+            </li>
+            <li class="scroller_item">
+              <img src="/content/main/sponsors/grammaly.png" alt="" />
+            </li>
+            <li class="scroller_item">
+              <img src="/content/main/sponsors/hellosign.png" alt="" />
+            </li>
+            <li class="scroller_item">
+              <img src="/content/main/sponsors/jitter.png" alt="" />
+            </li>
+            <li class="scroller_item">
+              <img src="/content/main/sponsors/krisp.png" alt="" />
+            </li>
+            <li class="scroller_item">
+              <img src="/content/main/sponsors/draftbit.png" alt="" />
+            </li>
+            <li class="scroller_item">
+              <img src="/content/main/sponsors/feedly.png" alt="" />
+            </li>
+            <li class="scroller_item">
+              <img src="/content/main/sponsors/grammaly.png" alt="" />
+            </li>
+            <li class="scroller_item">
+              <img src="/content/main/sponsors/hellosign.png" alt="" />
+            </li>
+            <li class="scroller_item">
+              <img src="/content/main/sponsors/jitter.png" alt="" />
+            </li>
+            <li class="scroller_item">
+              <img src="/content/main/sponsors/krisp.png" alt="" />
+            </li>
+          </ul>
+        </div>
+        <div class="scroller" data-speed="fast" data-direction="right">
+          <ul class="tag-list scroller__inner">
+            <li class="scroller_item">
+              <img src="/content/main/sponsors/liveChat.png" alt="" />
+            </li>
+            <li class="scroller_item">
+              <img src="/content/main/sponsors/mapbox.png" alt="" />
+            </li>
+            <li class="scroller_item">
+              <img src="/content/main/sponsors/metamask.png" alt="" />
+            </li>
+            <li class="scroller_item">
+              <img src="/content/main/sponsors/penda.png" alt="" />
+            </li>
+            <li class="scroller_item">
+              <img src="/content/main/sponsors/peopleAi.png" alt="" />
+            </li>
+            <li class="scroller_item">
+              <img src="/content/main/sponsors/sketch.png" alt="" />
+            </li>
+            <li class="scroller_item">
+              <img src="/content/main/sponsors/liveChat.png" alt="" />
+            </li>
+            <li class="scroller_item">
+              <img src="/content/main/sponsors/mapbox.png" alt="" />
+            </li>
+            <li class="scroller_item">
+              <img src="/content/main/sponsors/metamask.png" alt="" />
+            </li>
+            <li class="scroller_item">
+              <img src="/content/main/sponsors/penda.png" alt="" />
+            </li>
+            <li class="scroller_item">
+              <img src="/content/main/sponsors/peopleAi.png" alt="" />
+            </li>
+            <li class="scroller_item">
+              <img src="/content/main/sponsors/sketch.png" alt="" />
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="struct">
+        <div class="container">
+          <div class="struct__title">
+            <h2 class="title2 title2_struct">
+              one <span>platform</span> for any business
+            </h2>
+          </div>
+          <div class="struct__row">
+            <div class="struct__row_wrapper">
+              <div class="struct__wrapper_elem">
+                <div class="wrapper_elem_image wrapper_elem_image_red">
+                  <img
+                    src="/content/main/struct/appoint.png"
+                    alt="appointments"
+                  />
+                </div>
+                <div class="wrapper_elem_text">
+                  <div class="wrapper__elem_text_title">
+                    <h3 class="title3 title3_struct">appointments</h3>
+                  </div>
+                  <div class="wrapper__elem_text_subtitle">
+                    <p class="subtitleP subtitleP_card">
+                      Many desktop publishing packages and web page editors now
+                      use for them.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="struct__wrapper_elem">
+                <div class="wrapper_elem_image wrapper_elem_image_green">
+                  <img
+                    src="/content/main/struct/class.png"
+                    alt="appointments"
+                  />
+                </div>
+                <div class="wrapper_elem_text">
+                  <div class="wrapper__elem_text_title">
+                    <h3 class="title3 title3_struct">class bookings</h3>
+                  </div>
+                  <div class="wrapper__elem_text_subtitle">
+                    <p class="subtitleP subtitleP_card">
+                      Many desktop publishing packages and web page editors now
+                      use for them.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="struct__wrapper_elem">
+                <div class="wrapper_elem_image wrapper_elem_image_blue">
+                  <img src="/content/main/struct/fast.png" alt="appointments" />
+                </div>
+                <div class="wrapper_elem_text">
+                  <div class="wrapper__elem_text_title">
+                    <h3 class="title3 title3_struct">fast support</h3>
+                  </div>
+                  <div class="wrapper__elem_text_subtitle">
+                    <p class="subtitleP subtitleP_card">
+                      Many desktop publishing packages and web page editors now
+                      use for them.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="struct__images">
+                <img
+                  id="structStaticRed"
+                  src="/content/main/struct/staticRed.png"
+                  alt="staticRed"
+                />
+                <img
+                  data-aos="fade-right"
+                  id="structInfoRed"
+                  src="/content/main/struct/infoRed.png"
+                  alt="infoRed"
+                />
+                <img
+                  data-aos-offset="-150"
+                  data-aos="fade-left"
+                  id="structPayRed"
+                  src="/content/main/struct/payRed.png"
+                  alt="payRed"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer"></footer>
+  </body>
+</html>

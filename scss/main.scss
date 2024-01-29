@@ -1,0 +1,26 @@
+/* BASE */
+
+@import url(./../fonts/Clash/clash-display.css);
+@import url(./../fonts/Satoshi/stylesheet.css);
+@import url(https://fonts.googleapis.com/css?family=Poppins:regular,500);
+@import url(https://fonts.googleapis.com/css?family=Roboto:500);
+@import url(https://fonts.googleapis.com/css?family=Inter:regular,500,600,700);
+@import './base/animations';
+@import './base/mixins';
+@import './base/reset';
+@import './base/vars';
+@import './base/base';
+@import './base/navIcon';
+
+/* BASE */
+
+/* BLOCK */
+
+@import './blocks/header';
+@import './blocks/welcome';
+@import './blocks/sponsors';
+@import './blocks/sponsorsAnimation';
+@import './blocks/struct';
+
+
+/* BLOCK */
