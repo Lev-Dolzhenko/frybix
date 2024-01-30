@@ -1,0 +1,21 @@
+.info {
+    margin-bottom: 150px;
+}
+
+.info__row {
+    display: flex;
+    align-items: center;
+    column-gap: 48px;
+
+    max-width: 1076px;
+    padding: 43px 50px;
+
+    background-color: $colorAccent;
+    border-radius: 24px;
+
+    animation: shadow 2s ease infinite;
+}
+
+.info__row_elem_title {
+    margin-bottom: 12px;
+}

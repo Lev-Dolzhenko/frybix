@@ -17,6 +17,10 @@ a {
   max-width: 1270px;
   padding: 0 15px;
   margin: 0 auto;
+
+  &_segments {
+    min-width: 1318px;
+  }
 }
 
 .none {
@@ -44,6 +48,10 @@ a {
   span {
     background-color: $colorBgAccentTitle;
   }
+
+  &_info {
+    color: $coloWhite;
+  }
 }
 
 .title3 {
@@ -68,6 +76,16 @@ a {
     font-weight: 400;
     line-height: 27px; /* 158.824% */
   }
+
+  &_info {
+    color: $coloWhite;
+    text-align: center;
+    font-family: $satoshi;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px; /* 150% */
+    text-transform: capitalize;
+  }
 }
 
 .wrapper_stat {
@@ -85,4 +103,20 @@ a {
   font-weight: 500;
   line-height: 30px; /* 176.471% */
   text-transform: capitalize;
+}
+
+.card_elem {
+  display: flex;
+  justify-content: space-between;
+
+  max-width: 416px;
+  padding: 30px 20px;
+  border-radius: 24px;
+
+  transition: box-shadow 0.1s linear;
+
+  &:hover {
+    box-shadow: 0px 54.479px 64.093px 0px rgba(205, 205, 205, 0.16);
+    cursor: pointer;
+  }
 }
