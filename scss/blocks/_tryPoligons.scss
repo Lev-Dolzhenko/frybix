@@ -1,0 +1,73 @@
+.try {
+  position: relative;
+  overflow: hidden;
+}
+
+.tryPoligon {
+  position: absolute;
+  z-index: -1;
+}
+.purplePoligon {
+  opacity: 0;
+  left: 0;
+
+  //   animation: bigPoligonPurple 1s ease-in forwards;
+}
+.pinkPoligon {
+  opacity: 0;
+  left: 0px;
+  z-index: -2;
+
+  //   animation: smallPoligonPink 1s ease-in forwards;
+}
+.orangePoligon {
+  opacity: 0;
+  right: 0;
+
+  //   animation: bigPoligonOrange 1s ease-in forwards;
+}
+.yellowPoligon {
+  opacity: 0;
+  right: 0;
+  z-index: -2;
+
+  //   animation: smallPoligonYellow 1s ease-in forwards;
+}
+
+.animationPurplePoligon {
+  animation: bigPoligonPurple 1s ease-in forwards;
+}
+
+.animationPinkPoligon {
+  animation: smallPoligonPink 1s ease-in forwards;
+}
+
+.animationOrangePoligon {
+  animation: bigPoligonOrange 1s ease-in forwards;
+}
+
+.animationYellowPoligon {
+  animation: smallPoligonYellow 1s ease-in forwards;
+}
+
+@include mediaSmallTablet {
+  .purplePoligon {
+    display: none;
+  }
+
+  .pinkPoligon {
+    display: none;
+  }
+
+  .orangePoligon {
+    display: none;
+  }
+
+  .yellowPoligon {
+    display: none;
+  }
+
+  .try {
+    padding: 70px 0;
+  }
+}

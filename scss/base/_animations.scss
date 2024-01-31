@@ -1,21 +1,96 @@
 @keyframes showDashboard {
-    from {
-        transform: translateX(15%);
-        opacity: 0;
-    }
+  from {
+    transform: translateX(15%);
+    opacity: 0;
+  }
 
-    to {
-        transform: translateX(-3%);
-        opacity: 1;
-    }
+  to {
+    transform: translateX(-3%);
+    opacity: 1;
+  }
+}
+
+@keyframes showDashboardRev {
+  from {
+    transform: translateX(-20%);
+    opacity: 0;
+  }
+
+  to {
+    transform: translateX(-1%);
+    opacity: 1;
+  }
+}
+
+@keyframes showDashboardKeep {
+  from {
+    transform: translateX(30%);
+    opacity: 0;
+  }
+
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
 }
 
 @keyframes shadow {
-    from {
-        box-shadow: 0 0 0px #6640ff;
-    }
+  from {
+    box-shadow: 0 0 0px #6640ff;
+  }
 
-    to {
-        box-shadow: 0px 0 100px 0px rgba(102, 64, 255, 0.16);
-    }
+  to {
+    box-shadow: 0px 0 100px 0px rgba(102, 64, 255, 0.16);
+  }
 }
+
+@keyframes bigPoligonOrange {
+  from {
+    transform: translateY(143px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(-211px);
+  }
+}
+
+@keyframes bigPoligonPurple {
+  from {
+    transform: translateY(-224%);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(-124%);
+  }
+}
+
+@keyframes smallPoligonPink {
+  from {
+    transform: translateY(-291%);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(-191%);
+  }
+}
+
+@keyframes smallPoligonYellow {
+  from {
+    transform: translateY(61%);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(-38%);
+  }
+}
+
+@keyframes navMenu {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+

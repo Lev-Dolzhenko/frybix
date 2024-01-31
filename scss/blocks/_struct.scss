@@ -1,5 +1,5 @@
 .struct {
-  margin-bottom: 150px;
+  margin-bottom: clamp(70px, 2.691rem + 8.42vw, 150px);
 }
 
 .struct__row_wrapper {
@@ -15,6 +15,10 @@
   img {
     border-radius: 24px;
   }
+}
+
+.struct__title {
+  margin-bottom: clamp(20px, 0.661rem + 2.95vw, 48px);
 }
 
 #structStaticRed {
@@ -64,4 +68,31 @@
 }
 .wrapper__elem_text_title {
   margin-bottom: 6px;
+}
+
+@include mediaLargeTablet {
+  #structStaticRed {
+    display: none;
+  }
+
+  #structInfoRed {
+    display: none;
+  }
+
+  #structPayRed {
+    display: none;
+  }
+
+  .struct__row_wrapper {
+    display: flex;
+    justify-content: space-between;
+
+  }
+}
+
+@include mediaTablet {
+  .struct__row_wrapper {
+    flex-direction: column;
+    align-items: center;
+  }
 }

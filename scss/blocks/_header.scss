@@ -1,11 +1,11 @@
 .header {
-  //   position: relative;
-//   overflow-x: hidden;
-
+  // position: relative;
+  background: linear-gradient(to bottom, #6640ff, #fff);
   padding: 32px 0 83px;
-  // margin: 32px 0 83px;
-
-  
+  .header_bg {
+    position: absolute;
+    z-index: -2;
+  }
 }
 
 .header__row {
@@ -14,14 +14,6 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-
-//   &::after {
-//     content: url(./../../content/header/headerBg2.png);
-//     position: absolute;
-//     right: -73%;
-//     top: -1500%;
-//     z-index: -1;
-//   }
 }
 
 .heder__row_list {
@@ -63,5 +55,56 @@
   &:hover {
     box-shadow: 0 0 10px $coloWhite;
     transform: scale(1.03);
+  }
+}
+
+.nav_icon {
+  display: none;
+}
+
+.nav_mobile {
+  opacity: 1;
+  position: absolute;
+  left: 50%;
+  top: 783%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+
+  text-align: center;
+
+  opacity: 0;
+
+  a {
+    color: $colorBlack !important;
+    text-transform: uppercase;
+    font-size: 30px;
+    font-weight: 700;
+  }
+
+  ul {
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+  }
+
+  .header__row_button_mobile {
+    margin: 30px auto 0;
+  }
+  button {
+    background-color: $colorAccent;
+    color: $coloWhite;
+  }
+}
+
+.showCloseMenu {
+  animation: navMenu 0.2s linear forwards;
+}
+
+@include mediaTablet {
+  .header__row_nav {
+    display: none;
+  }
+  .nav_icon {
+    display: block;
   }
 }

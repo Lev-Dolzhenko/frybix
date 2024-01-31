@@ -1,21 +1,29 @@
 .info {
-    margin-bottom: 150px;
+  margin-bottom: clamp(1.875rem, -0.651rem + 12.63vw, 9.375rem);
 }
 
 .info__row {
-    display: flex;
-    align-items: center;
-    column-gap: 48px;
+  display: flex;
+  align-items: center;
+  column-gap: 48px;
 
-    max-width: 1076px;
-    padding: 43px 50px;
+  max-width: 1076px;
+  padding: clamp(20px, 0.766rem + 2.42vw, 43px) clamp(25px, 1.036rem + 2.63vw, 50px);
+  margin: 0 auto;
 
-    background-color: $colorAccent;
-    border-radius: 24px;
+  background-color: $colorAccent;
+  border-radius: 24px;
 
-    animation: shadow 2s ease infinite;
+  animation: shadow 2s ease infinite;
 }
 
 .info__row_elem_title {
-    margin-bottom: 12px;
+  margin-bottom: 12px;
+}
+
+@include mediaTablet {
+  .info__row {
+    flex-direction: column;
+    row-gap: 30px;
+  }
 }

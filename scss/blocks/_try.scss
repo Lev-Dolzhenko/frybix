@@ -1,0 +1,44 @@
+.try {
+  background-color: $colorBgTry;
+  padding: 140px 0;
+  z-index: 0;
+}
+
+.try__row {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: clamp(12px, 0.497rem + 1.26vw, 24px);
+
+  max-width: 405px;
+  margin: 0 auto;
+
+  z-index: 1;
+}
+
+.try__row_button {
+  button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: clamp(20px, 1.103rem + 0.74vw, 27px) clamp(70px, 3.743rem + 3.16vw, 100px);
+
+    border-radius: 100px;
+    border: 2px solid $colorBlack;
+
+    color: $colorBlack;
+    font-family: $satoshi;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 26px; /* 162.5% */
+    text-transform: capitalize;
+
+    transition: all 0.2s linear;
+
+    &:hover {
+      transform: scale(1.1);
+      background: linear-gradient(to right, #6640ff, #ff77d9, #ffe090, #ff8c4c);
+    }
+  }
+}

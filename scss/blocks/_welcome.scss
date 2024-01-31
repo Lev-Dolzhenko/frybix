@@ -1,7 +1,7 @@
 .welcome {
   position: relative;
 
-  margin-bottom: 100px;;
+  margin-bottom: clamp(70px, 3.743rem + 3.16vw, 100px);;
 }
 
 .welcome__images {
@@ -42,18 +42,18 @@
 
 .wrapper_text_subtitleP {
   max-width: 434px;
-  margin-bottom: 28px;
+  margin-bottom: clamp(14px,  0.58rem + 1.47vw, 28px);
 }
 
 .welcome__wrapper_text_form {
   display: flex;
   align-items: center;
-  column-gap: 24px;
+  column-gap: clamp(10px, 0.33rem + 1.47vw, 24px);
 
   input {
     border-radius: 84px;
     border: 1px solid $colorBorder;
-    padding: 20px 40px;
+    padding: clamp(10px, 0.414rem + 1.05vw, 20px) clamp(20px, 0.829rem + 2.11vw, 40px);
 
     width: 100%;
     max-width: 400px;
@@ -63,6 +63,10 @@
     font-weight: 500;
     line-height: 26px; /* 162.5% */
     text-transform: capitalize;
+
+    &:focus {
+      box-shadow: 0 0 5px $colorAccent;
+    }
   }
 
   button {
@@ -70,7 +74,7 @@
     align-items: center;
     justify-content: center;
 
-    padding: 19px;
+    padding: clamp(11px, 0.519rem + 0.84vw, 19px);
     border-radius: 50%;
     background-color: $colorAccent;
 
@@ -83,7 +87,7 @@
 }
 
 .welcome__wrapper_customers {
-  margin-top: 61px;
+  margin-top: clamp(30px, 1.222rem + 3.26vw, 61px);
 
   strong {
     color: $colorBlack;
@@ -130,7 +134,7 @@
   display: flex;
   align-items: center;
 
-  margin-top: 32px;
+  margin-top: clamp(18px, 0.83rem + 1.47vw, 32px);
 }
 
 .customers__row_persons {
@@ -210,3 +214,49 @@
     margin-left: 10px;
   }
 }
+
+@include mediaLargeTablet {
+  #welocmeDashboard {
+    opacity: 0.4;
+  }
+  #welcomeCustomers {
+    display: none;
+  }
+  #welcomeStatistic {
+    display: none;
+  }
+}
+
+@include mediaTablet {
+  #welocmeDashboard {
+    display: none;
+  }
+
+    // line-height: 37px;
+}
+
+@include mediaSmallTablet {
+  .wrapper_customers_row {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    row-gap: 5px;
+  }
+
+  .customers__row_counter::after {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .welcome__wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    // justify-content: center;
+  }
+}
+
+
+// display: grid;
+//     grid-template-rows: 1fr 1fr;
+//     row-gap: 5px;

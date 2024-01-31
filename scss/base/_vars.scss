@@ -14,8 +14,10 @@ $colorBlack: #000;
 $colorBlackMuted: rgba(0, 0, 0, 0.5);
 $coloWhite: #fff;
 $colorAccent: #6640ff;
+$colorAccentHover: #5429ff;
 $colorBorder: #e1e1e1;
 $colorBgAccentTitle: #fff0d9;
+$colorBgTry: #F9F9F9;
 
 $colorRed: rgba(242, 57, 54, 0.2);
 $colorGreen: rgba(69, 198, 70, 0.2);
@@ -25,12 +27,15 @@ $colorOrange: rgba(242, 122, 54, 0.2);
 $colorPurple: rgba(148, 54, 242, 0.2);
 $colorBlueSecondary: rgba(54, 152, 242, 0.2);
 
+$colorClientPink: #FF77D9;
+
 /*COLORS*/
 
 /*MEDIA*/
 
-$tablet: 1000px;
-$semiTablet: 630px;
+$largeTablet: 1400px;
+$tablet: 900px;
+$smallTablet: 630px;
 $phone: 320px;
 
 /*MEDIA*/
